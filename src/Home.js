@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import data from './data.js'
+import Navar from './navBar.js'
 
 const Home = () => {
     const [noOfElements, setnoOfElements] = useState(4);
@@ -10,7 +11,17 @@ const Home = () => {
     const slice = data.cardData.slice(0,noOfElements);
   return (
     <>
-     
+      
+        <Navar/>
+
+        
+      <input type="text"
+   placeholder="Search.." 
+   className=""
+   name="search2"
+   style={{border:"none",color:"black", width:'80%',margin:'50px',height:'40px'}}
+    />
+        
          <section className='py-4 container'>
              <h1 className='row justify-content-center'>Animals</h1>
              <div className='row justify-content-center'>
